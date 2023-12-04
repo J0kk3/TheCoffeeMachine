@@ -1,1 +1,5 @@
 ﻿  Main.cpp
+  Products.cpp
+D:\Repos\TheCoffeeMachine\Products.cpp(10,20): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
+  TheCoffeeMachine.vcxproj -> D:\Repos\TheCoffeeMachine\x64\Debug\TheCoffeeMachine.exe
