@@ -1,4 +1,5 @@
 #include "Products.h"
+#include "HandleTransaction.h"
 #include <iostream>
 #include <string>
 
@@ -37,19 +38,25 @@ int main()
 			if (choice == toupper(product.code))
 			{
 				productFound = true;
+				double money = 0.0;
+
+				if (product.price > 0)
+				{
+					std::cout << "\n\tInsert money:";
+					std::cin >> money;
+				}
+				
+				// Create an instance of HandleTransaction
+				HandleTransaction transactionHandler;
+				//The product is found, ask the user to insert money
+				transactionHandler.processTransaction(product, money);
 				// A product is found, break the loop
 				break;
 			}
 		}
 
-		if (productFound)
-		{
-			//The product is found, ask the user to insert money
-			// TODO: Implement this
-			std::cout << "\n\tPlease insert money: ";
-		}
-		else
-		{
+		if (!productFound)
+		{			
 			std::cout << "\n\tInvalid choice, please try again!" << std::endl;
 		}
 	}

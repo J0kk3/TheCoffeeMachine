@@ -129,6 +129,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="HandleTransaction.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Products.cpp" />
   </ItemGroup>
@@ -136,6 +137,7 @@
     <None Include=".gitignore" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="HandleTransaction.h" />
     <ClInclude Include="Main.h" />
     <ClInclude Include="Products.h" />
   </ItemGroup>
